@@ -9,7 +9,7 @@ body{ background:#f2f4f5;}
 .content .login-box{ position:relative;}
 .content .login-box .lsolid{width:1.96rem;height:0.18rem; border-bottom:1px solid #4c4f50; position:absolute;top:0;left:0.1rem;}
 .content .login-box .rsolid{width:1.96rem;height:0.18rem; border-bottom:1px solid #4c4f50; position:absolute;top:0;right:0.1rem;}
-.content ul{width:5.78rem;height:1.92rem; border:1px solid #e5e7e8; background:#fff; margin:0 auto; margin-top:0.68rem;}
+.content ul{width:5.78rem;height:2.92rem; border:1px solid #e5e7e8; background:#fff; margin:0 auto; margin-top:0.68rem;}
 .content ul li{height:0.95rem; position:relative;}
 .content ul li.lifirst{border-bottom:1px solid #e5e7e8;}
 .content ul li input{ padding-left:1.24rem;width:4.54rem;height:100%; font-size:0.4rem;}

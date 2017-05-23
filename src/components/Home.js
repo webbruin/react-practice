@@ -21,8 +21,9 @@ class Home extends React.Component{
   getHomeData(){
     let {showLoading,hideLoading} = this.props;
     showLoading();
-    let url = 'http://localhost:8001/src/data/index.data';
+    let url = 'http://localhost:3000/article';
     fetch(url).then((res)=>{
+      console.log("我连到后台了");
       if(res.ok){
         res.json().then((data)=>{
           setTimeout(()=>{

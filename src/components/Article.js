@@ -15,7 +15,9 @@ class Article extends React.Component{
   }
   getData(){
     let dataName=this.props.router.location.query.dataName;
-    let url="http://localhost:8001/src/data/article-"+dataName+".data";
+    // let url="http://localhost:8001/src/data/article-"+dataName+".data";
+    let url = 'http://localhost:3000/detail_'+dataName;
+    console.log('**************',url);
     fetch(url).then((res)=>{
       res.json().then((data)=>{
         this.setState({
@@ -29,7 +31,6 @@ class Article extends React.Component{
   render(){
     let now = this.props.params.aid-1;
     let arr = this.state.arr[now];
-
     return(
       <div className="article">
         <div className="nav">

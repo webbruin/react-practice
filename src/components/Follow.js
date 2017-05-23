@@ -20,7 +20,7 @@ class Follow extends React.Component{
   getFollowData(){
     let {showLoading,hideLoading} = this.props;
     showLoading();
-    let url = 'http://localhost:8001/src/data/follow.data';
+    let url = 'http://localhost:3000/follow';
     fetch(url).then((res)=>{
       if(res.ok){
         res.json().then((data)=>{

@@ -19,20 +19,26 @@ class Reg extends React.Component{
           </div>
           <p className="rsolid"></p>
         </div>
-        <ul>
-          <li className="lifirst">
-            <input type="text" value=""/>
-            <span>帐号</span>
-          </li>
-          <li>
-            <input type="text" value=""/>
-            <span>密码</span>
-          </li>
-        </ul>
-        <div className="footbox">
-          <input type="button" value="注 册" className="login-btn"/>
-          <a href="javascript:;" className="tishi">忘记密码？</a>
-        </div>
+        <form action="http://localhost:3000/reg" method="post">
+          <ul>
+            <li className="lifirst">
+              <input type="text" name="nick" />
+              <span>昵称</span>
+            </li>
+            <li className="lifirst">
+              <input type="text" name="usn" />
+              <span>帐号</span>
+            </li>
+            <li>
+              <input type="text" name="psd" />
+              <span>密码</span>
+            </li>
+          </ul>
+          <div className="footbox">
+            <input type="submit" value="注 册" className="login-btn"/>
+            <a href="javascript:;" className="tishi">忘记密码？</a>
+          </div>
+        </form>
       </div>
     )
   }
